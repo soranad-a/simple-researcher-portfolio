@@ -1,4 +1,4 @@
-# Simple IT or Researcher Portfolio
+# Simple Researcher Portfolio
 
 This project includes a small react-based web application which can be used as a portfolio webpage. Feel free to use it, as long as you keep the attribution notice in the footer.
 I used this project as a kind of a refresher in React without using a UI style library like Material UI or Bootstrap. Instead, it uses emotion for handling the css.
