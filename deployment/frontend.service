@@ -1,0 +1,15 @@
+[Unit]
+Description=<your_domain>
+
+[Service]
+ExecStart=serve -s /path/to/repo/frontend/build -p 3002
+ExecReload=serve -s /path/to/repo/frontend/build -p 3002
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/path/to/repo/frontend/build
+
+[Install]
+WantedBy=multi-user.target

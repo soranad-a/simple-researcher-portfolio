@@ -1,0 +1,16 @@
+[Unit]
+Description=<your_domain> Backend
+
+[Service]
+ExecStart=node /path/to/repo/server/build/index.js
+ExecReload=node /path/to/repo/server/build/index.js
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+EnvironmentFile=/path/to/repo/server/.env
+WorkingDirectory=/path/to/repo/server/build
+
+[Install]
+WantedBy=multi-user.target
